@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/filledTextField"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="10dp"
+        android:layout_marginHorizontal="15dp"
+        android:hint="Enter Artist Name"
+        app:startIconDrawable="@drawable/search"
+        app:endIconDrawable="@drawable/icons8_search"
+        app:startIconTint="@color/d2red"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/ubuntumedium"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_15sdp"
+            android:textColorHint="@color/gray"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recycle"
+        />
+
+
+
+</LinearLayout>

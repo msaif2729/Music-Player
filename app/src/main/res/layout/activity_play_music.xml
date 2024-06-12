@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PlayMusic"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="550dp"
+        android:id="@+id/l"
+        android:background="@color/d2red"
+        android:padding="@dimen/_25sdp"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SONG NAME"
+            android:gravity="center"
+            android:fontFamily="@font/ubuntubold"
+            android:textSize="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_35sdp"
+            android:id="@+id/text"
+
+            />
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:id="@+id/img1"
+            android:layout_marginTop="@dimen/_45sdp"
+            android:layout_below="@id/text"
+            android:layout_centerHorizontal="true"
+            />
+    </RelativeLayout>
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/l"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:progressTint="@color/red"
+        android:progressBackgroundTint="@color/bw"
+        android:thumbTint="@color/d2red"
+        />
+
+
+    <ImageButton
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/play"
+        android:layout_below="@id/l"
+        android:src="@drawable/play1"
+        android:background="@drawable/button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_50sdp"
+        />
+
+
+
+</RelativeLayout>

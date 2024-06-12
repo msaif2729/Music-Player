@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/back">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/musical"
+        android:layout_above="@id/t1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/_25sdp"
+        />
+
+    <TextView
+        android:id="@+id/t1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Music Player"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/ubuntubold"
+        android:textSize="40sp"
+        android:textColor="@color/bw"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Where words fail, \nmusic speaks."
+        android:fontFamily="@font/ubuntumedium"
+        android:textSize="@dimen/_13sdp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/t1"
+        android:layout_marginTop="200dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        />
+
+</RelativeLayout>
